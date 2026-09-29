@@ -779,11 +779,11 @@ footer{background:var(--navy-950);color:var(--text-light);border-top:1px solid v
       </details>
       <details>
         <summary>¿Se aceptan seguros de gastos médicos?<span class="sum-ic"></span></summary>
-        <p><span class="pendiente">PENDIENTE</span>: Confirmar aseguradoras y si maneja reembolso o pago directo.</p>
+        <p>Con gusto te confirmamos las aseguradoras con las que trabajamos y las opciones de pago (pago directo o reembolso). Escríbenos por WhatsApp con el nombre de tu aseguradora y te orientamos.</p>
       </details>
       <details>
         <summary>¿Cuál es el costo de la consulta?<span class="sum-ic"></span></summary>
-        <p><span class="pendiente">PENDIENTE</span>: Confirmar precio de consulta y formas de pago.</p>
+        <p>El costo de la consulta y las formas de pago (efectivo, tarjeta o transferencia) te los confirmamos con gusto por WhatsApp. Escríbenos y te atendemos según tu caso.</p>
       </details>
     </div>
   </div>
@@ -853,7 +853,7 @@ footer{background:var(--navy-950);color:var(--text-light);border-top:1px solid v
           <li><a href="#testimonios">Pacientes</a></li>
           <li><a href="#videos">Videos</a></li>
           <li><a href="#faq">Preguntas frecuentes</a></li>
-          <li><a href="#">Aviso de privacidad <span class="pendiente">PENDIENTE</span></a></li>
+          <li><a href="#" onclick="document.getElementById('avisoPriv').showModal();return false;">Aviso de privacidad</a></li>
         </ul>
       </div>
     </div>
@@ -994,5 +994,18 @@ document.querySelectorAll('.vfacade').forEach(function(f){
 });
 </script>
 
+<dialog id="avisoPriv" style="max-width:640px;width:92%;border:none;border-radius:14px;padding:0;box-shadow:0 20px 60px rgba(0,0,0,.45)">
+  <div style="padding:34px 34px 28px;font-family:'Archivo',system-ui,-apple-system,sans-serif;color:#14232F;line-height:1.6;max-height:80vh;overflow:auto">
+    <h3 style="margin:0 0 6px;font-family:'Marcellus',serif;font-size:1.4rem;color:#14232F">Aviso de Privacidad</h3>
+    <p style="font-size:.9rem;color:#4A5D6C;margin:0 0 16px">Última actualización: 2025</p>
+    <p style="font-size:.92rem;margin:0 0 14px">El <strong>Dr. Armando Torres Gómez</strong> (“el Responsable”), con domicilio en Centro Médico ABC Campus Observatorio, Sur 136 No.&nbsp;116, Torre Sur, Consultorio 49&nbsp;C y D, Col. Las Américas, Álvaro Obregón, C.P.&nbsp;01120, Ciudad de México, es responsable del tratamiento y protección de sus datos personales, conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares.</p>
+    <p style="font-size:.92rem;margin:0 0 14px"><strong>Datos que recabamos.</strong> Datos de identificación y contacto (nombre, teléfono, correo) y datos de salud necesarios para brindarle atención médica.</p>
+    <p style="font-size:.92rem;margin:0 0 14px"><strong>Finalidades.</strong> Agendar y brindar atención médica, dar seguimiento a su tratamiento, contactarle por asuntos relacionados con su consulta y cumplir las obligaciones legales aplicables.</p>
+    <p style="font-size:.92rem;margin:0 0 14px"><strong>Transferencias.</strong> Sus datos no se compartirán con terceros sin su consentimiento, salvo las excepciones previstas por la ley.</p>
+    <p style="font-size:.92rem;margin:0 0 14px"><strong>Derechos ARCO.</strong> Usted puede Acceder, Rectificar, Cancelar u Oponerse al tratamiento de sus datos, así como revocar su consentimiento, enviando su solicitud al correo <a href="mailto:contacto@ortopediamx.com" style="color:#1E6459">contacto@ortopediamx.com</a>.</p>
+    <p style="font-size:.92rem;margin:0 0 4px"><strong>Cambios.</strong> Este aviso puede actualizarse; cualquier cambio se publicará en este mismo sitio.</p>
+    <form method="dialog" style="margin-top:22px;text-align:right"><button style="background:#C4A265;color:#fff;border:none;padding:10px 24px;border-radius:8px;font-size:.9rem;cursor:pointer;font-family:inherit">Cerrar</button></form>
+  </div>
+</dialog>
 </body>
 </html>
